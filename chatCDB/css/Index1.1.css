@@ -1,0 +1,28 @@
+.contenedor-grid2{
+    display: grid;
+    height: 70vh;
+    width: 100%;
+    grid-template-rows: repeat(2, 15% 85%);
+    grid-template-columns: repeat(2, 50% 50%);
+    grid-template-areas: 
+    "header header"
+    "section1 section1";
+}
+
+header{
+    grid-area: header;
+    background-color: blue;
+}
+
+.section1{
+    grid-area: section1;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-de-como-se-usa{
+    font-size: 50px;
+    text-align: center;
+}
